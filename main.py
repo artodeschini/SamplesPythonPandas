@@ -1,0 +1,27 @@
+import pandas as pd
+
+# df = pd.read_excel('c:/apps/courses_schedule.xlsx')
+df1 = pd.read_csv('my.csv')
+# print(df1)
+
+df2 = pd.read_csv('copy.csv')
+# print(df2)
+
+# df = pd.concat([df1, df2])
+# print(df)
+# print (pd.merge(a,b, indicator=True, how='outer')
+#          .query('_merge=="left_only"')
+#          .drop('_merge', axis=1))
+
+# df = pd.merge(df1, df2, indicator=True, how='outer').query('_merge=="left_only"').drop('_merge', axis=1)
+# print(df)
+
+cond = df1['email'].isin(df2['email'])
+df1.drop(df1[cond].index, inplace=True)
+
+print(df1)
+
+new_file_name = 'generate.xlsx'
+
+# saving the excel
+df1.to_excel(new_file_name)
