@@ -24,7 +24,7 @@ df1.drop(df1[cond].index, inplace=True)
 now = datetime.now()
 now_as_str = now.strftime("%Y%m%d%H%M%S")
 
-new_file_name = f'generate_catia_{now_as_str}.xlsx'
+new_file_name = f'output/generate_catia_{now_as_str}.xlsx'
 
 # saving the excel
 df1.to_excel(new_file_name)

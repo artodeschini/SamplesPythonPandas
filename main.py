@@ -1,4 +1,6 @@
 import pandas as pd
+from datetime import datetime
+
 
 # df = pd.read_excel('c:/apps/courses_schedule.xlsx')
 df1 = pd.read_csv('my.csv')
@@ -21,7 +23,11 @@ df1.drop(df1[cond].index, inplace=True)
 
 print(df1)
 
-new_file_name = 'generate.xlsx'
+now = datetime.now()
+now_as_str = now.strftime("%Y%m%d%H%M%S")
+
+new_file_name = f'output/generate_novo_excel_{now_as_str}.xlsx'
+
 
 # saving the excel
 df1.to_excel(new_file_name)

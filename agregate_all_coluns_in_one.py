@@ -22,7 +22,7 @@ df2 = pd.concat(all_coluns_series, axis=0)
 now = datetime.now()
 now_as_str = now.strftime("%Y%m%d%H%M%S")
 
-new_file_name = f'generate_unir_todos_{now_as_str}.xlsx'
+new_file_name = f'output/generate_unir_todos_{now_as_str}.xlsx'
 
 # saving the excel
 df1.to_excel(new_file_name)

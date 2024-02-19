@@ -41,7 +41,7 @@ df2.drop_duplicates()
 now = datetime.now()
 now_as_str = now.strftime("%Y%m%d%H%M%S")
 
-new_file_name = f'generate_todas_as_planilhas_{now_as_str}.xlsx'
+new_file_name = f'output/generate_todas_as_planilhas_{now_as_str}.xlsx'
 
 # saving the excel
 df2.to_excel(new_file_name)
