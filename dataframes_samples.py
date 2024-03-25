@@ -54,7 +54,7 @@ new_file_name = f'generate_csv_sem_excolher_colunas_{now_as_str}.csv'
 # df1.to_csv(new_file_name)
 
 # ler dados de um arquivo csv
-df2 = pd.read_csv('my.csv')
+df2 = pd.read_csv('in/my.csv')
 
 ## continua em sam
 

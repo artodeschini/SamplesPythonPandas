@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import datetime
 
 
-df = pd.read_csv('ventas.csv', sep=';') # sep casa o delimitador seja diferente o padrao é ','
+df = pd.read_csv('in/ventas.csv', sep=';') # sep casa o delimitador seja diferente o padrao é ','
 df.fillna(0, inplace=True)
 
 # adicionar coluna resultado de quantidade e preco unitario

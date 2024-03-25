@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def carga():
-    return pd.read_csv('titanic.csv', index_col=0)
+    return pd.read_csv('in/titanic.csv', index_col=0)
 
 
 df1 = carga()

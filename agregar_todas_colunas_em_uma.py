@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import datetime
 
 
-df1 = pd.read_csv('my.csv')
+df1 = pd.read_csv('in/my.csv')
 # print(df1)
 
 column_names = df1.columns.values.tolist()

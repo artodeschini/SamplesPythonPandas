@@ -21,7 +21,7 @@ import pandas as pd
 
 # 1. generar un dataframe con los datos del fichero indicado.
 # abre o arquivo utilizando o id como a coluna 0
-df = pd.read_csv('titanic.csv', index_col=0)
+df = pd.read_csv('in/titanic.csv', index_col=0)
 print(df)
 
 # dimensoes linhas x colunas

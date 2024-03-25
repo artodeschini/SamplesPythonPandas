@@ -3,10 +3,10 @@ from datetime import datetime
 
 
 # df = pd.read_excel('c:/apps/courses_schedule.xlsx')
-df1 = pd.read_csv('my.csv')
+df1 = pd.read_csv('in/my.csv')
 # print(df1)
 
-df2 = pd.read_csv('copy.csv')
+df2 = pd.read_csv('in/copy.csv')
 # print(df2)
 
 # df = pd.concat([df1, df2])
@@ -26,8 +26,8 @@ print(df1)
 now = datetime.now()
 now_as_str = now.strftime("%Y%m%d%H%M%S")
 
-new_file_name = f'output/generate_novo_excel_{now_as_str}.xlsx'
+new_file_name = f'output/generate_novo_excel_{now_as_str}.csv'
 
 
 # saving the excel
-df1.to_excel(new_file_name)
+# df1.to_csv(new_file_name)

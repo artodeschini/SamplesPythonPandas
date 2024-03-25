@@ -2,14 +2,14 @@ import pandas as pd
 from datetime import datetime
 
 
-xlsx_file_name_1 = 'LeadsAnteriores.xlsx'
+xlsx_file_name_1 = 'in/LeadsAnteriores.xlsx'
 xlsx_file1 = pd.ExcelFile(xlsx_file_name_1)
 
 # {sheet_name: xlsx_file1.parse(sheet_name) for sheet_name in xlsx_file1.sheet_names}
 df1 = xlsx_file1.parse(xlsx_file1.sheet_names[0])
 # print(df1)
 
-xlsx_file_name_2 = 'ClientesNumeros.xlsx'
+xlsx_file_name_2 = 'in/ClientesNumeros.xlsx'
 # df = pd.read_excel(xlsx_file, sheetname="Sheet1")
 xlsx_file2 = pd.ExcelFile(xlsx_file_name_2)
 

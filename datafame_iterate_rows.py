@@ -16,7 +16,7 @@ def send(j):
     print(j)
 
 
-df = pd.read_csv('my.csv')
+df = pd.read_csv('in/my.csv')
 # df['price'] = df.apply(lambda row: valuation_formula(row['x'], row['y']), axis=1)
 df.apply(lambda row: send(row_to_json(row)), axis=1)
 

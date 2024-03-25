@@ -1,6 +1,4 @@
 import pandas as pd
-import numpy as np
-from datetime import datetime
 
 dados = {
     'alunos': ['Artur', 'Catia', 'Manu', 'Liria', 'Diego', 'Vitoria', 'Bianca'],

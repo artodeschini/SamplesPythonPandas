@@ -3,8 +3,6 @@ from datetime import timedelta
 from datetime import date
 from datetime import time
 
-
-# print(datetime.datetime.now())
 now = datetime.now()
 print(now)
 print(datetime.timestamp(now))
