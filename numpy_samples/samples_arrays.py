@@ -119,3 +119,61 @@ print(matriz)
 trasposta = matriz.T
 print(trasposta.shape)
 print(trasposta)
+
+# element wise operations addicao
+m1 = np.array([[1, 2, 3], [4, 5, 6]])
+print(matriz)
+m2 = np.array([[-1, -2, -3], [-4, -5, -6]])
+print(m2)
+print(m1 + m2)  # isso calcular por coordenadae e dar o resultado
+# o resultado será
+# [[0 0 0]
+# [0 0 0]]
+
+l1 = [[1, 2, 3], [4, 5, 6]];
+l2 = [[-1, -2, -3], [-4, -5, -6]]
+print(l1 + l2)  # vai concatenar as listas
+# [[1, 2, 3], [4, 5, 6], [-1, -2, -3], [-4, -5, -6]]
+
+# element wise operations substract
+m1 = np.array([[1, 2, 3], [4, 5, 6]])
+print(matriz)
+m2 = np.array([[1, 2, 3], [4, 5, 6]])
+print(m2)
+print(m1 - m2)  # isso calcular por coordenadae e dar o resultado
+# o resultado será
+# [[0 0 0]
+# [0 0 0]]
+
+l1 = [[1, 2, 3], [4, 5, 6]]
+l2 = [[1, 2, 3], [4, 5, 6]]
+# print(l1 - l2)  # vai gerar um erro
+
+# element wise operations multiple
+m1 = np.array([[1, 2, 3], [4, 5, 6]])
+print(matriz)
+m2 = np.array([[1, 2, 3], [4, 5, 6]])
+print(m2)
+print(m1 * m2)  # isso calcular por coordenadae e dar o resultado
+# o resultado será
+# [[ 1  4  9]
+# [16 25 36]]
+
+l1 = [[1, 2, 3], [4, 5, 6]]
+l2 = [[1, 2, 3], [4, 5, 6]]
+# print(l1 * l2)  # vai gerar um erro
+
+# element wise operations division
+m1 = np.array([[1, 2, 3], [4, 5, 6]])
+print(matriz)
+m2 = np.array([[1, 2, 3], [4, 5, 6]])
+print(m2)
+print(m1 / m2)  # isso calcular por coordenadae e dar o resultado
+print(m1 // m2)
+# o resultado será
+# [[ 1  1  1]
+# [1 1 1]]
+
+l1 = [[1, 2, 3], [4, 5, 6]]
+l2 = [[1, 2, 3], [4, 5, 6]]
+# print(l1 * l2)  # vai gerar um erro
