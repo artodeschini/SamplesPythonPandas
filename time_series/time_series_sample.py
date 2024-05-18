@@ -33,4 +33,5 @@ plt.xlabel("Ano")
 plt.xlabel("Preço")
 
 plt.plot(df['Adj Close'])
+
 plt.show()
