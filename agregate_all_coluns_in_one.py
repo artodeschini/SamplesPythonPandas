@@ -13,7 +13,7 @@ df1 = xlsx_file1.parse(xlsx_file1.sheet_names[0]) # indice da planilha
 column_names = df1.columns.values.tolist()
 # print(column_names)
 
-all_coluns_series = list();
+all_coluns_series = list()
 for c in column_names:
     all_coluns_series.append(df1[c])
 
